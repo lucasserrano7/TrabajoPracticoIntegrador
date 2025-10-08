@@ -1,0 +1,10 @@
+.imgArt{
+    align-items: flex-start;
+    padding-left: 400px;
+    padding-right: 0px;
+}
+.categoria{
+    text-decoration-line: overline;
+    margin: 20px;
+    
+}
