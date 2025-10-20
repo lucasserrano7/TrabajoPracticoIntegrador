@@ -8,13 +8,13 @@
 </head>
 <body>
     <div class="caja">
-    <form action="">
+    <form action="" method="get">
         <h2>CONTACTO</h2>
         <div class="inputs">
-        <input type="text" placeholder="Nombre" class="campos" required>
-        <input type="email" required placeholder="Email" class="campos">
-        <input type="number" required placeholder="Nro. de Telefono" class="campos">
-        <textarea name="Mensaje" id="" placeholder="Escriba su consulta" class="campos" rows="10"></textarea>
+        <input type="text" placeholder="Nombre" class="campos"  name="Nombre">
+        <input type="email" required placeholder="Email" class="campos" name="Email">
+        <input type="number" required placeholder="Nro. de Telefono" class="campos" name="Tel">
+        <textarea name="Mensaje" id="" placeholder="Escriba su consulta" class="campos" rows="10" name="Mensaje"></textarea>
         
         <div class="botones">
         <input type="submit" value="Enviar" class="Enviar">

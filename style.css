@@ -3,7 +3,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.cabecera{
+header{
     background-color: #0D1B2A;
     color: #E0E1DD;
     display: flex;
@@ -40,6 +40,8 @@ body{
     color: #415A77;
     box-shadow: #E0E1DD;
     font-weight: bold;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px white;
 }
 .categorias .inicioSesion{
     background-color:#d76711;
@@ -106,29 +108,44 @@ min-height: 800px;
     background-color: #415A77;
     min-height: 800px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
-.servicios p{
-  color: #d76711;
+.servicios h3, p{
+    color: #E0E1DD;
+  text-align: center;
+}
+.servicio_individuales {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
 }
 
-
-.servicios img{
-    height: 400px;
+.servicios_individuales img{
+    height: 350px;
     width: 250px;
-    border: 15px solid ;
+    border-radius: 25px;
+    border: 5px solid ;
     border-color: #d76711;
-    border-radius: 15px;
+    box-shadow: 0px 0px 20px #d1884f;
+}
+.servicios .img1{
+object-position: -200px;
+   object-fit: cover;
 }
 
-.piedepagina{
+footer{
     background-color: #778DA9;
-    min-height: 400px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-text-align: center;
-padding: 50px 20px;
-color: #E0E1DD;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    color: #E0E1DD;
+}
+
+footer p {
+    
 }
