@@ -95,6 +95,10 @@ h2{
     background-image: url(/fondo_carrusel.jpeg);
     background-position: center;
     background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
     background-color: #E0E1DD;
 min-height: 800px;
 }
