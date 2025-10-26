@@ -69,7 +69,7 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 100%;
 
-    background-image: url(/imagen_info.webp);
+    background-image: url(/imagenes\ tp\ prog/imagen_info.webp);
     background-size: cover;
     background-position: center;
     filter: blur(5px);
@@ -92,7 +92,7 @@ h2{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/fondo_carrusel.jpeg);
+    background-image: url(/imagenes\ tp\ prog/fondo_carrusel.jpeg);
     background-position: center;
     background-repeat: repeat;
     background-color: #E0E1DD;
@@ -148,4 +148,62 @@ footer{
 
 footer p {
     
+}
+
+.carrusel {
+  position: relative;
+  text-align: center;
+  background-image: url("imagenes tp prog/fondo_carrusel.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+}
+
+.carrusel img {
+  margin: auto;
+  padding-top: 150px;
+  max-width: 80%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+
+.carrusel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(235, 146, 51);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+
+.btn-derecha {
+  right: 10%;
+}
+
+
+.btn-izquierda {
+  left: 10%;
+}
+
+.btn-izquierda span {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.carrusel button:hover {
+  background-color: rgb(245, 165, 73);
+  transform: translateY(-50%) scale(1.1);
 }

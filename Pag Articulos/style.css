@@ -55,9 +55,6 @@ body{
     height: 250px;
     width: 250px;
 }
-.modelos{
-
-}
 .filtros_der{
     display: flex;
     flex-direction: column;
@@ -68,10 +65,90 @@ body{
     align-items: center;
     padding: 15px;
 }
-.filtros_der #filtros {
 
+.catalogo {
+  text-align: center;
+  padding: 60px 20px;
 }
 
+.catalogo h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.catalogo p {
+  font-size: 18px;
+  color: #415A77;
+  margin-bottom: 40px;
+}
+
+.grid-autos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  margin: 10px 0 5px;
+  color: #0D1B2A;
+}
+
+.precio {
+  font-size: 18px;
+  color: #d76711;
+  font-weight: bold;
+}
+
+.detalle {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.botones {
+  display: flex;
+  margin-left: auto;
+  justify-content:center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-consultar {
+  background-color: #d76711;
+  color: #fff;
+}
+
+.btn-vermas {
+  background-color: #778DA9;
+  color: white;
+}
 .piedepagina{
     background-color: #778DA9;
     min-height: 400px;
