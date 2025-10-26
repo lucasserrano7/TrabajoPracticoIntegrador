@@ -1,27 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario Contacto</title>
-    <link rel="stylesheet" href="/Pag Formulario/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/Pag Formulario/style.css" />
+  </head>
+  <body>
+    <div class="video-background">
+      <video autoplay muted loop playsinline id="video-fondo">
+        <source
+          src="/vecteezy_white-background-stripe-curve-wave-4k-resolution-clean_14415193.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
     <div class="caja">
-    <form action="" method="get">
+      <form action="" method="post" id="formulario">
         <h2>CONTACTO</h2>
-        <div class="inputs">
-        <input type="text" placeholder="Nombre" class="campos"  name="Nombre">
-        <input type="email" required placeholder="Email" class="campos" name="Email">
-        <input type="number" required placeholder="Nro. de Telefono" class="campos" name="Tel">
-        <textarea name="Mensaje" id="" placeholder="Escriba su consulta" class="campos" rows="10" name="Mensaje"></textarea>
-        
-        <div class="botones">
-        <input type="submit" value="Enviar" class="Enviar">
-        <input type="reset" value="Borrar datos">
+        <div class="formulario-grupo" id="nombre">
+         <div class="formulario-grupo_input">
+            <input
+            type="text"
+            placeholder="Nombre"
+            class="campos"
+            name="Nombre"
+          />
+          <i class="formulario__validacion-estado fa-solid "></i>
+          </div>
+          <p class="formulario_error">El nombre no puede contener numeros ni caracteres especiales.</p>
+</div>
+
+<div class="formulario-grupo" id="email">
+    <div class="formulario-grupo_input">
+          <input
+            type="email"
+            required
+            placeholder="Email"
+            class="campos"
+            name="Email"
+          />
+               <i class="formulario__validacion-estado  fa-solid "></i>
+               </div>
+          <p class="formulario_error">El email tiene que ser valido.</p>
+</div>
+<div class="formulario-grupo" id="numero">
+    <div class="formulario-grupo_input">
+          <input
+            type="number"
+            required
+            placeholder="Nro. de Telefono"
+            class="campos"
+            name="Tel"
+          />
+               <i class="formulario__validacion-estado  fa-solid "></i>
+               </div>
+          <p class="formulario_error">El telefono no puede contener letras ni caracteres especiales</p>
+</div>
+<div class="formulario-grupo" id="mensaje">
+    <div class="formulario-grupo_input">
+          <textarea
+            name="Mensaje"
+            id=""
+            placeholder="Escriba su consulta"
+            class="campos"
+            rows="10"
+          ></textarea>
+          
+               <i class="formulario__validacion-estado  fa-solid "></i>
+               </div>
+          <p class="formulario_error">La consulta no puede estar vacia.</p>
+</div>
+<div class="formulario-mensaje" id="mensaje_error">
+            <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Porfavor completa todos los campos.
+            </b> </p>
         </div>
-    </div>
-    </form>
-    </div>
+
+          <div class="botones" id="botones">
+            <input type="submit" value="Enviar" class="Enviar" />
+            <input type="reset" value="Borrar datos" />
+          </div>
+<div class="formulario-mensaje-exito" id="mensaje_exito">
+            <p>Datos enviados correctamente <i class="fa-solid fa-face-smile"></i></p>
+          </div>
+          </form>
+        </div>
+        
+      
+    <script src="/Pag Formulario/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/7582d63276.js" crossorigin="anonymous"></script>
 </body>
 </html>
