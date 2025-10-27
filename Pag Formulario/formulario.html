@@ -16,12 +16,13 @@
       </video>
     </div>
     <div class="caja">
-      <form action="" method="post" id="formulario">
+      <form action="" method="post" id="formulario" novalidate>
         <h2>CONTACTO</h2>
         <div class="formulario-grupo" id="nombre">
          <div class="formulario-grupo_input">
             <input
             type="text"
+            required
             placeholder="Nombre"
             class="campos"
             name="Nombre"
@@ -47,7 +48,7 @@
 <div class="formulario-grupo" id="numero">
     <div class="formulario-grupo_input">
           <input
-            type="number"
+            type="text"
             required
             placeholder="Nro. de Telefono"
             class="campos"
@@ -61,7 +62,8 @@
     <div class="formulario-grupo_input">
           <textarea
             name="Mensaje"
-            id=""
+            id="mensaje"
+            required
             placeholder="Escriba su consulta"
             class="campos"
             rows="10"
@@ -69,7 +71,7 @@
           
                <i class="formulario__validacion-estado  fa-solid "></i>
                </div>
-          <p class="formulario_error">La consulta no puede estar vacia.</p>
+          <p class="formulario_error">La consulta no puede estar vacia. (Entre 20 y 500 caracteres)</p>
 </div>
 <div class="formulario-mensaje" id="mensaje_error">
             <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Porfavor completa todos los campos.
