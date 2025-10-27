@@ -1,8 +1,8 @@
 
         const imagenesCarrusel = [
-        "imagenes tp prog/amarok.jpeg",
-        "imagenes tp prog/renegade_trailhawk_0112.jpg",
-        "imagenes tp prog/grande_34999.jpg"
+        "imagenes tp prog/amroki.png",
+        "imagenes tp prog/renegade.png",
+        "imagenes tp prog/208.png"
         ];
 
     let indexImagenesCarrusel = 0;

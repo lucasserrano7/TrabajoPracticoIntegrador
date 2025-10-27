@@ -38,7 +38,6 @@ header{
 .categorias li:hover{
     background-color: #778DA9;
     color: #415A77;
-    box-shadow: #E0E1DD;
     font-weight: bold;
     transform: scale(1.1);
     box-shadow: 0px 0px 5px white;
@@ -82,63 +81,49 @@ h2{
 }
 .info p {
     font-size: 20px;
-    font-weight: bold;
+    margin: 0px 150px;
 }
 .info h2, p{
     z-index: 2;
 }
-.carrusel{
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(/imagenes\ tp\ prog/fondo_carrusel.jpeg);
-    background-position: center;
-    background-repeat: repeat;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: auto;
-    background-color: #E0E1DD;
-min-height: 800px;
-}
-.carrusel img{
-    align-items: center;
-    display: flex;
-    margin: auto;
-    padding-top: 150px;
-}
+
+
 .servicios{
     background-color: #415A77;
-    min-height: 800px;
+    min-height: 700px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-.servicios h3, p{
-    color: #E0E1DD;
-  text-align: center;
-}
-.servicio_individuales {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center;
+justify-content: center;
+gap: 140px;
+padding: 50px 20px;
 }
 
-.servicios_individuales img{
-    height: 350px;
-    width: 250px;
+.servicios_individuales{
+    width: 300px;
+    text-align: center;
+}
+
+.servicios h3, .servicios p{
+    color: #E0E1DD;
+}
+
+.servicios h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.servicios_individuales .img1{
+    height: 300px;
+    width: 100%;
     border-radius: 25px;
     border: 5px solid ;
     border-color: #d76711;
     box-shadow: 0px 0px 20px #d1884f;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
-.servicios .img1{
-object-position: -200px;
-   object-fit: cover;
-}
+
 
 footer{
     background-color: #778DA9;
@@ -150,9 +135,6 @@ footer{
     color: #E0E1DD;
 }
 
-footer p {
-    
-}
 
 .carrusel {
   position: relative;
@@ -160,15 +142,25 @@ footer p {
   background-image: url("imagenes tp prog/fondo_carrusel.jpeg");
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 800px;
 }
 
+.carrusel-hj{
+    position: relative;
+    max-width: 80%;
+    display: inline-block;
+}
+
 .carrusel img {
-  margin: auto;
-  padding-top: 150px;
-  max-width: 80%;
+    margin: auto;
+  height: 550px;
+    width: 80%;
+    display: block;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+object-fit: contain;
 }
 
 
@@ -189,17 +181,24 @@ footer p {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-  transition: 0.3s;
+  transition: transform 0.4s ease, background-color 0.2s ease;
 }
 
 
 .btn-derecha {
-  right: 10%;
+  right: 8%;
+}
+.btn-derecha:active{
+    transform: translateY(-50%) scale(1.1) translateX(10px);
 }
 
 
 .btn-izquierda {
-  left: 10%;
+  left: 8%;
+}
+
+.btn-izquierda:active{
+    transform: translateY(-50%) scale(1.1) translateX(-10px);
 }
 
 .btn-izquierda span {
@@ -209,5 +208,5 @@ footer p {
 
 .carrusel button:hover {
   background-color: rgb(245, 165, 73);
-  transform: translateY(-50%) scale(1.1);
 }
+
