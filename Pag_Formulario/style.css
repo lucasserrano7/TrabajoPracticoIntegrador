@@ -1,6 +1,6 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(/imagenes\ tp\ prog/fondo_carrusel.jpeg);
+    background-image: url(../imagenes\ tp\ prog/fondo_carrusel.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
