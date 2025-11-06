@@ -99,7 +99,46 @@ formulario.addEventListener('submit', (e)  => {
 e.preventDefault();
 
 if(campos.nombre && campos.correo && campos.telefono && campos.mensaje){
+
+const contenedorDatos = document.getElementById('datosEnviados');
+contenedorDatos.style.display = 'flex';
+contenedorDatos.innerHTML = '<h3>Datos Enviados:</h3>';
+
+const nombreValor = formulario.querySelector('[name = "Nombre"]').value;
+
+const emailValor = formulario.querySelector('[name = "Email"]').value;
+
+const telValor = formulario.querySelector('[name = "Tel"]').value;
+
+const mensajValor = formulario.querySelector('[name = "Mensaje"]').value;
+
+
+const pNombre = document.createElement('p');
+pNombre.textContent = `Nombre: ${nombreValor}`;
+contenedorDatos.appendChild(pNombre);
+
+
+const pEmail = document.createElement('p');
+pEmail.textContent = `Email: ${emailValor}`;
+contenedorDatos.appendChild(pEmail);
+
+const pTel = document.createElement('p');
+pTel.textContent = `Telefono: ${telValor}`;
+contenedorDatos.appendChild(pTel);
+
+const pMensaje = document.createElement('p');
+pMensaje.textContent = `Consulta: ${mensajValor}`;
+contenedorDatos.appendChild(pMensaje);
+
+
+
 formulario.reset();
+
+campos.nombre =false;
+campos.correo =false;
+campos.telefono =false;
+campos.mensaje =false;
+
 
 
 document.getElementById('mensaje_exito').classList.add('formulario-mensaje-exito-activo');

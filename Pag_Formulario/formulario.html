@@ -35,7 +35,7 @@
           />
           <i class="formulario__validacion-estado fa-solid "></i>
           </div>
-          <p class="formulario_error">El nombre no puede contener numeros ni caracteres especiales.</p>
+          <p class="formulario_error">El nombre solo contiene letras y es requerido.</p>
 </div>
 
 <div class="formulario-grupo" id="email">
@@ -49,7 +49,7 @@
           />
                <i class="formulario__validacion-estado  fa-solid "></i>
                </div>
-          <p class="formulario_error">El email tiene que ser valido.</p>
+          <p class="formulario_error">El email tiene que ser valido, y no estar vacio.</p>
 </div>
 <div class="formulario-grupo" id="numero">
     <div class="formulario-grupo_input">
@@ -62,7 +62,7 @@
           />
                <i class="formulario__validacion-estado  fa-solid "></i>
                </div>
-          <p class="formulario_error">El telefono no puede contener letras ni caracteres especiales</p>
+          <p class="formulario_error">El telefono solo contiene numeros, no puede estar vacio.</p>
 </div>
 <div class="formulario-grupo" id="mensaje">
     <div class="formulario-grupo_input">
@@ -93,6 +93,7 @@
           </div>
           </form>
         </div>
+        <div id="datosEnviados"></div>
         
       
     <script src="formulario.js"></script>
