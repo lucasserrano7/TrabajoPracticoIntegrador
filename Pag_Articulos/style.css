@@ -82,11 +82,11 @@ body{
   margin-bottom: 40px;
 }
 
-.grid-autos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.cartas-autos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
-  justify-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -97,6 +97,7 @@ body{
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   padding: 20px;
   width: 300px;
+  flex: 0 0 300px;
   transition: transform 0.3s ease;
 }
 
